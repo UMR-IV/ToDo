@@ -1,0 +1,158 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bbe3f0;
+    background-image: url('./images/IMG20220114070721.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(241, 232, 232, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+#todo-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#todo-form input[type="text"],
+#todo-form input[type="date"],
+#todo-form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#todo-form input[type="text"],
+#todo-form input[type="date"] {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#todo-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#todo-form button:hover {
+    background-color: #45a049;
+}
+
+/* Table styles */
+.decorative-box {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#todo-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Link styles */
+.links-container {
+    margin-bottom: 40px; 
+}
+
+.links-container ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.links-container li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.links-container img {
+    width: 110px;
+    height: 110px;
+    border-radius: 10px; 
+    border: 2px solid #9b9494;
+    transition: transform 0.3s ease-in-out;
+}
+
+.links-container img:hover {
+    transform: scale(1.1);
+    border-color: #6cd7fe; 
+}
+
+/* Schedule styles */
+.schedule-container {
+    max-width: 800px; 
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#schedule-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.delete-icon, .edit-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; 
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.delete-icon {
+    background-image: url('./images/delete_icon.png'); 
+}
+
+.edit-icon {
+    background-image: url('./images/edit_icon.png'); 
+    margin-right: 5px;
+}
+
+.delete-icon:hover, .edit-icon:hover {
+    filter: brightness(80%);
+}
+
+.progress-input {
+    width: 35px;
+}

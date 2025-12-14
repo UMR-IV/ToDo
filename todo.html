@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/UMR_147.png" sizes="144x144">
+    <title>My Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Quick Access Links -->
+        <div class="links-container">
+            <ul>
+                <li><a href="https://www.youtube.com/"><img src="./images/yt.png" alt="YouTube"></a></li>
+                <li><a href="https://github.com/UMR-IV"><img src="./images/UMR.png" alt="GitHub"></a></li>
+                <li><a href="https://www.twitch.tv"><img src="./images/neuro.png" alt="Twitch"></a></li>
+                <li><a href="https://github.com/UMR-IV"><img src="./images/bebe.png" alt="work"></a></li>
+                <li><a href="https://chatgpt.com"><img src="./images/gpt.png" alt="ChatGPT"></a></li>
+            </ul>
+            <ul>
+                <li style="width: 120px;"><span>YouTube</span></li>
+                <li style="width: 111px;"><span>GitHub</span></li>
+                <li style="width: 120px;"><span>Twitch</span></li>
+                <li style="width: 108px;"><span>Work</span></li>
+                <li style="width: 120px;"><span>Chat GPT</span></li>
+            </ul>
+        </div>
+
+        <!-- To-Do List -->
+        <div class="todo-container">
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="Enter a task...">
+                <input type="date" id="deadline-input">
+                <button type="submit">Add Task</button>
+            </form>
+            <div class="decorative-box">
+                <table id="todo-list">
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th class="center" style="width:170px;">Deadline</th>
+                            <th class="center" style="width:70px;">Progress</th>
+                            <th class="center" style="width:70px;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Schedule -->
+        <div class="schedule-container">
+            <img id="schedule-image" src="#" alt="Schedule Image">
+            <div class="upload-container" style="text-align: center;">
+                <input type="file" id="schedule-image-input" accept="image/*">
+                <button id="save-schedule-btn">Save</button>
+            </div>  
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
